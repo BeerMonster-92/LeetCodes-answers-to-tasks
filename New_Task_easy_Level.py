@@ -1,10 +1,18 @@
-# Ожидаемый результат: {85: ['Alice', 'Charlie'], 92: ['Bob', 'Diana']}
+dict = {1:2, 2:4, 3:6, 4:8, 5:10}
+# нет чисел 7 и 9
+# key = (1, 2, 3, 4, 5)
+# value = (2, 4, 6, 8, 10)
 
-grades = {'Alice': 85, 'Bob': 92, 'Charlie': 85, 'Diana': 92}
+if 5 in dict:
+    print("yes")
+else:
+    print("no")
+# выведет "yes" так как in проверяет ключи
 
-inv_grades = {}
-for key, value in grades.items():
-    if value not in inv_grades:
-        inv_grades[value] = []   # создаём новый список
-    inv_grades[value].append(key)
-print(inv_grades)
+
+if 10 in dict:
+    print("yes")
+else:
+    print("no")
+
+# выведет "no" так как in не проверяет значения
